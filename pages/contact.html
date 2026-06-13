@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | InsureWise</title>
+  <meta name="description"
+    content="Get in touch with the InsureWise team. Send us your questions, feedback, or partnership inquiries through our contact form.">
+  <meta name="author" content="InsureWise">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yourusername.github.io/insurance-blog/pages/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <script src="../ads/ads-config.js" defer></script>
+  <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+  <div id="reading-progress" role="progressbar"></div>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand">
+        <div class="brand-icon">IW</div><span class="brand-name">Insure<span>Wise</span></span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false"
+        aria-controls="nav-menu"><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="nav-menu" role="menubar">
+        <li role="none"><a href="../index.html" class="nav-link">Home</a></li>
+        <li role="none"><a href="health-insurance.html" class="nav-link">Health Insurance</a></li>
+        <li role="none"><a href="car-insurance.html" class="nav-link">Car Insurance</a></li>
+        <li role="none"><a href="resources.html" class="nav-link">Resources</a></li>
+        <li role="none"><a href="about.html" class="nav-link">About</a></li>
+        <li role="none"><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><span class="breadcrumb-item"><a
+            href="../index.html">Home</a></span><span class="breadcrumb-sep">›</span><span
+          class="breadcrumb-item active">Contact</span></nav>
+    </div>
+  </div>
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Have a question, feedback, or a partnership inquiry? We'd love to hear from you.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container" style="max-width: 800px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-10); align-items: start;">
+        <!-- Contact Form -->
+        <div>
+          <h2 style="font-size: var(--text-2xl); margin-bottom: var(--space-6);">Send Us a Message</h2>
+          <form id="contact-form" aria-label="Contact form" novalidate action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Full Name <span aria-hidden="true"
+                  style="color:red">*</span></label>
+              <input type="text" class="form-control" id="contact-name" name="name" placeholder="Your full name"
+                required autocomplete="name" aria-required="true">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Email Address <span aria-hidden="true"
+                  style="color:red">*</span></label>
+              <input type="email" class="form-control" id="contact-email" name="email" placeholder="your@email.com"
+                required autocomplete="email" aria-required="true">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject <span aria-hidden="true"
+                  style="color:red">*</span></label>
+              <input type="text" class="form-control" id="contact-subject" name="subject"
+                placeholder="What is this about?" required aria-required="true">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message <span aria-hidden="true"
+                  style="color:red">*</span></label>
+              <textarea class="form-control" id="contact-message" name="message"
+                placeholder="Tell us how we can help..." required aria-required="true" rows="6"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="contact-submit-btn" aria-label="Send message"
+              style="width:100%;">Send Message →</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h2 style="font-size: var(--text-2xl); margin-bottom: var(--space-6);">Get in Touch</h2>
+          <div style="display: flex; flex-direction: column; gap: var(--space-6);">
+            <div style="display:flex;gap:var(--space-4);align-items:flex-start;">
+              <div style="font-size:28px;flex-shrink:0;">📧</div>
+              <div>
+                <strong style="display:block;margin-bottom:4px;color:var(--color-gray-800);">Email Us</strong>
+                <a href="mailto:contact@youom.online" style="color:var(--color-primary);">contact@youom.online</a>
+                <p style="font-size:var(--text-sm);color:var(--color-gray-500);margin-top:4px;">We respond within 24
+                  business hours.</p>
+              </div>
+            </div>
+            <div style="display:flex;gap:var(--space-4);align-items:flex-start;">
+              <div style="font-size:28px;flex-shrink:0;">📝</div>
+              <div>
+                <strong style="display:block;margin-bottom:4px;color:var(--color-gray-800);">Editorial
+                  Inquiries</strong>
+                <a href="mailto:editorial@insurewise.com"
+                  style="color:var(--color-primary);">editorial@insurewise.com</a>
+                <p style="font-size:var(--text-sm);color:var(--color-gray-500);margin-top:4px;">For corrections, guest
+                  posts, or article suggestions.</p>
+              </div>
+            </div>
+            <div style="display:flex;gap:var(--space-4);align-items:flex-start;">
+              <div style="font-size:28px;flex-shrink:0;">💼</div>
+              <div>
+                <strong style="display:block;margin-bottom:4px;color:var(--color-gray-800);">Advertising</strong>
+                <a href="mailto:ads@insurewise.com" style="color:var(--color-primary);">ads@insurewise.com</a>
+                <p style="font-size:var(--text-sm);color:var(--color-gray-500);margin-top:4px;">For advertising
+                  partnerships and sponsorship inquiries.</p>
+              </div>
+            </div>
+            <div style="background:var(--color-primary-lighter);border-radius:var(--radius-xl);padding:var(--space-5);">
+              <p style="font-size:var(--text-sm);color:var(--color-primary-dark);margin:0;"><strong>Please
+                  note:</strong> InsureWise does not provide personalized insurance advice. For specific insurance
+                recommendations, please consult a licensed insurance agent in your state.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ad-zone">
+    <div id="ad-footer"></div>
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="brand-icon">IW</div><span class="brand-name">Insure<span>Wise</span></span>
+          </div>
+          <p class="footer-tagline">Your trusted guide to health and car insurance.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="health-insurance.html">Health Insurance</a></li>
+            <li><a href="car-insurance.html">Car Insurance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="terms.html">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2025 InsureWise. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+</body>
+
+</html>

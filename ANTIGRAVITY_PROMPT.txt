@@ -1,0 +1,374 @@
+================================================================
+  ANTIGRAVITY PROMPT — INSURANCE BLOG WEBSITE
+  Pure HTML + CSS + JavaScript | AdSense Ready | GitHub Pages
+================================================================
+
+Build me a complete, professional, AdSense-ready Insurance Blog
+website using ONLY HTML, CSS, and JavaScript (no WordPress,
+no backend, no frameworks). The website should be deployable
+directly to GitHub Pages.
+
+----------------------------------------------------------------
+🌐 WEBSITE OVERVIEW
+----------------------------------------------------------------
+- Type: Blog Website (AdSense Ready)
+- Niche: Health Insurance & Car Insurance
+- Goal: Rank on Google, get traffic, earn from Google AdSense
+- Stack: Pure HTML5 + CSS3 + Vanilla JavaScript ONLY
+- Hosting: GitHub Pages (static files only)
+- Color Scheme: Blue (#1565C0), White (#FFFFFF), Green (#2E7D32)
+- Font: Inter or Roboto from Google Fonts
+
+----------------------------------------------------------------
+📁 FILE & FOLDER STRUCTURE (create exactly this)
+----------------------------------------------------------------
+
+insurance-blog/
+├── index.html                    ← Homepage / Blog listing
+├── sitemap.xml                   ← XML sitemap for Google SEO
+├── robots.txt                    ← SEO robots file
+├── .gitignore
+├── README.md
+│
+├── css/
+│   ├── style.css                 ← All main styles
+│   └── responsive.css            ← Mobile/tablet responsive styles
+│
+├── js/
+│   └── main.js                   ← Navigation, search, interactions
+│
+├── ads/
+│   └── ads-config.js             ← ALL AD CODES GO IN THIS FILE ONLY
+│
+├── images/
+│   └── (placeholder image refs)
+│
+└── pages/
+    ├── health-insurance.html     ← Health Insurance blog listing
+    ├── car-insurance.html        ← Car Insurance blog listing
+    ├── resources.html            ← Resources & comparisons
+    ├── about.html                ← About Us
+    ├── contact.html              ← Contact Us with HTML form
+    ├── privacy-policy.html       ← Privacy Policy (AdSense required)
+    ├── disclaimer.html           ← Disclaimer (AdSense required)
+    ├── terms.html                ← Terms & Conditions
+    ├── sitemap.html              ← HTML sitemap (user visible)
+    │
+    └── articles/
+        ├── best-health-insurance-2025.html
+        ├── cheap-health-insurance.html
+        ├── health-insurance-self-employed.html
+        ├── best-car-insurance-2025.html
+        ├── lower-car-insurance-premium.html
+        └── full-coverage-vs-liability.html
+
+----------------------------------------------------------------
+🧭 NAVIGATION BAR (present on ALL pages)
+----------------------------------------------------------------
+Sticky top navbar with:
+- Logo: "InsureWise" (left side)
+- Nav Links (right side):
+  Home | Health Insurance | Car Insurance | Resources | About | Contact
+- Mobile: hamburger menu (☰) that toggles dropdown
+- Active page highlight in navbar
+- Smooth scroll behavior
+
+----------------------------------------------------------------
+🏠 HOMEPAGE (index.html) — Proper Blog Layout
+----------------------------------------------------------------
+Section 1 — HERO BANNER:
+  - Full-width hero with background image/gradient
+  - Headline: "Your Trusted Guide to Health & Car Insurance"
+  - Subheading: "Expert tips, comparisons & guides to save money"
+  - CTA Button: "Read Latest Articles" → scrolls to posts section
+
+Section 2 — HEADER AD ZONE:
+  - <div id="ad-header"></div>
+  - Centered, full-width, below hero
+
+Section 3 — FEATURED CATEGORIES:
+  - Two large cards side by side:
+    Card 1: "Health Insurance" with icon/image → /pages/health-insurance.html
+    Card 2: "Car Insurance" with icon/image → /pages/car-insurance.html
+
+Section 4 — HOMEPAGE AD ZONE:
+  - <div id="ad-homepage"></div>
+
+Section 5 — LATEST BLOG POSTS GRID:
+  - 6 post cards in responsive grid (3 columns desktop, 2 tablet, 1 mobile)
+  - Each card has: featured image, category badge, title, excerpt, Read More link
+  - Posts link to their article pages in /pages/articles/
+
+Section 6 — IN-FEED AD ZONE (between post rows):
+  - <div id="ad-infeed"></div>
+
+Section 7 — TEXT AD ZONE:
+  - <div id="ad-text"></div>
+
+Section 8 — NEWSLETTER SIGNUP:
+  - Email input + Subscribe button
+  - "Get weekly insurance tips in your inbox"
+
+Section 9 — FOOTER AD ZONE:
+  - <div id="ad-footer"></div>
+
+FOOTER:
+  - Logo + tagline
+  - Quick Links: Home | Health Insurance | Car Insurance | About | Contact
+  - Legal Links: Privacy Policy | Disclaimer | Terms | Sitemap
+  - Copyright: "© 2025 InsureWise. All rights reserved."
+
+----------------------------------------------------------------
+📄 ALL INNER PAGES — LAYOUT TEMPLATE
+----------------------------------------------------------------
+Every page (articles, category pages, static pages) must have:
+- Same sticky navbar
+- Breadcrumb navigation below navbar
+- Two-column layout: Main Content (70%) + Sidebar (30%)
+- Sidebar contains:
+    - <div id="ad-sidebar"></div>
+    - Recent Posts widget
+    - Categories widget
+    - Search box
+- Same footer
+
+----------------------------------------------------------------
+📝 ARTICLE PAGE LAYOUT (for all 6 blog posts)
+----------------------------------------------------------------
+Structure inside each article:
+
+  [NAVBAR]
+  [BREADCRUMB: Home > Health Insurance > Article Title]
+
+  <article>
+    [FEATURED IMAGE - full width]
+    [H1 TITLE]
+    [Meta: Date | Category | Reading time]
+
+    [AD ZONE: <div id="ad-before-article"></div>]
+
+    [INTRO PARAGRAPH]
+    [H2 Section 1]
+    [Content paragraphs...]
+
+    [AD ZONE: <div id="ad-between-article"></div>]
+
+    [H2 Section 2]
+    [Content paragraphs...]
+    [H2 Section 3]
+    [Content paragraphs...]
+
+    [AD ZONE: <div id="ad-after-article"></div>]
+
+    [TAGS: health insurance, insurance tips, etc.]
+    [SHARE BUTTONS: Twitter, Facebook, WhatsApp, Copy Link]
+    [RELATED POSTS: 3 cards]
+  </article>
+
+  [SIDEBAR with ad-sidebar]
+  [FOOTER]
+
+----------------------------------------------------------------
+📝 BLOG POSTS TO CREATE (SEO + Viral Keywords)
+----------------------------------------------------------------
+
+HEALTH INSURANCE (3 posts):
+
+Post 1: best-health-insurance-2025.html
+  Title: "Best Health Insurance Plans in 2025 – Complete Buyer's Guide"
+  Meta: "Compare the best health insurance plans of 2025. Find affordable coverage that fits your budget and needs. Expert reviews and rankings."
+  Keywords: best health insurance plans, affordable health insurance, health coverage 2025
+  Word count: ~800 words
+  Content: H1 title, intro, H2 sections (Types of plans, How to compare, Top picks, FAQs), conclusion
+
+Post 2: cheap-health-insurance.html
+  Title: "How to Get Cheap Health Insurance Without Losing Coverage"
+  Meta: "Learn proven ways to get cheap health insurance while keeping quality coverage. Save hundreds per year with these expert tips."
+  Keywords: cheap health insurance, low cost health plans, save on health insurance
+
+Post 3: health-insurance-self-employed.html
+  Title: "Health Insurance for Self-Employed: Everything You Need to Know"
+  Meta: "Self-employed? Here's how to get the best health insurance as a freelancer or independent contractor. Compare plans and save."
+  Keywords: health insurance self employed, freelancer health plan, independent contractor insurance
+
+CAR INSURANCE (3 posts):
+
+Post 4: best-car-insurance-2025.html
+  Title: "Top 10 Car Insurance Companies in 2025 – Ranked & Reviewed"
+  Meta: "Compare the top car insurance companies of 2025. Find the best rates, coverage options, and customer reviews all in one place."
+  Keywords: best car insurance 2025, top auto insurance companies, car insurance review
+
+Post 5: lower-car-insurance-premium.html
+  Title: "How to Lower Your Car Insurance Premium by 40%"
+  Meta: "Proven strategies to reduce your car insurance premium significantly. Legally save money on auto insurance starting today."
+  Keywords: lower car insurance, reduce auto insurance cost, cheap car insurance tips
+
+Post 6: full-coverage-vs-liability.html
+  Title: "Full Coverage vs Liability Car Insurance – Which One Do You Need?"
+  Meta: "Full coverage vs liability car insurance: understand the differences, costs, and which type is right for your situation."
+  Keywords: full coverage vs liability, car insurance types, auto insurance comparison
+
+Each article must have:
+  ✅ Proper H1, H2, H3 heading structure
+  ✅ SEO meta title and description in <head>
+  ✅ Open Graph tags for social sharing
+  ✅ Internal links to other articles
+  ✅ All 3 ad zones: before, between, after article
+  ✅ Minimum 700 words of real readable content
+  ✅ FAQ section at the end
+  ✅ Schema markup (Article schema JSON-LD)
+
+----------------------------------------------------------------
+💰 ADS SYSTEM — ads/ads-config.js (CRITICAL)
+----------------------------------------------------------------
+Create a single file: ads/ads-config.js
+
+This file must:
+- Contain an ADS object with keys for every zone:
+  header, footer, beforeArticle, afterArticle, betweenArticle,
+  sidebar, homepage, inFeed, textAd, popunder
+- Each key holds an empty string or HTML comment placeholder
+- Have an injectAd(zoneKey, containerId) function
+- Have an injectPopunder() function
+- Auto-run on DOMContentLoaded to inject all ads
+- Re-execute script tags inside ad HTML
+
+Ad container IDs to place in HTML files:
+  <div id="ad-header"></div>
+  <div id="ad-footer"></div>
+  <div id="ad-before-article"></div>
+  <div id="ad-after-article"></div>
+  <div id="ad-between-article"></div>
+  <div id="ad-sidebar"></div>
+  <div id="ad-homepage"></div>
+  <div id="ad-infeed"></div>
+  <div id="ad-text"></div>
+
+Every HTML file must load ads-config.js in <head> or before </body>
+
+Popunder: injected into document.head via script tag, fires on page load.
+
+----------------------------------------------------------------
+🎨 CSS DESIGN REQUIREMENTS
+----------------------------------------------------------------
+style.css must include:
+- CSS custom properties (variables) for all colors and fonts
+- Clean card design for blog posts (shadow, hover effect)
+- Sticky navbar with box-shadow
+- Hero section with gradient overlay
+- Category badge styles (pill shape, colored)
+- Responsive grid for post cards
+- Ad zone containers: centered, max-width 728px for banners
+- Sidebar sticky positioning
+- Button styles with hover transitions
+- Reading progress bar on article pages
+
+responsive.css must include:
+- Breakpoints: 1200px, 992px, 768px, 576px
+- Mobile navbar transforms to hamburger
+- Grid changes: 3col → 2col → 1col
+- Font sizes scale down on mobile
+- Sidebar moves below content on mobile
+- Images are max-width: 100%
+- Touch-friendly tap targets (min 44px)
+
+----------------------------------------------------------------
+🗺️ SITEMAP & SEO FILES
+----------------------------------------------------------------
+
+robots.txt:
+  User-agent: *
+  Allow: /
+  Sitemap: https://yourusername.github.io/insurance-blog/sitemap.xml
+
+sitemap.xml: List all HTML pages with <loc> and <priority>
+
+pages/sitemap.html (user-visible HTML sitemap):
+  - H1: "Sitemap"
+  - Section: Main Pages (Home, About, Contact, Privacy Policy, Disclaimer, Terms)
+  - Section: Health Insurance Articles (list all 3)
+  - Section: Car Insurance Articles (list all 3)
+  - All entries are clickable links
+
+----------------------------------------------------------------
+📋 REQUIRED PAGES CONTENT
+----------------------------------------------------------------
+
+privacy-policy.html:
+  - What data we collect (cookies, analytics)
+  - How we use Google AdSense (third-party ads)
+  - Cookie policy
+  - Contact info
+
+disclaimer.html:
+  - Content is for informational purposes only
+  - Not professional financial/insurance advice
+  - Affiliate/advertising disclosure
+
+terms.html:
+  - Terms of use
+  - Intellectual property
+  - Limitation of liability
+
+contact.html:
+  - H1: "Contact Us"
+  - HTML form fields: Name, Email, Subject, Message, Send Button
+  - (Form submits to mailto: or Formspree)
+  - Address/email info section
+
+about.html:
+  - Mission statement
+  - About the blog
+  - What topics we cover
+
+----------------------------------------------------------------
+📱 PERFORMANCE & ACCESSIBILITY
+----------------------------------------------------------------
+- All images use loading="lazy"
+- Minify inline CSS where possible
+- Use rel="preconnect" for Google Fonts
+- Add aria-labels to buttons and nav
+- Keyboard navigable
+- Color contrast ratio meets WCAG AA
+- Page titles unique on every page
+- Canonical URLs in every page head
+
+----------------------------------------------------------------
+🚀 GITHUB PAGES DEPLOYMENT
+----------------------------------------------------------------
+- All links must be RELATIVE paths (no absolute localhost paths)
+- No server-side code (no PHP, no Node)
+- index.html is the entry point
+- All assets referenced correctly from any subfolder depth
+- Use correct relative paths like ../../ads/ads-config.js
+
+----------------------------------------------------------------
+✅ FINAL CHECKLIST — Verify before finishing
+----------------------------------------------------------------
+[ ] All 14 HTML files created
+[ ] Navbar working on all pages with correct links
+[ ] All 6 blog posts have 3 ad zones each
+[ ] ads/ads-config.js loaded in every HTML file
+[ ] Mobile responsive (hamburger menu works)
+[ ] Privacy Policy, Disclaimer, Terms pages done
+[ ] Contact form built
+[ ] Sitemap.xml created
+[ ] Robots.txt created
+[ ] HTML Sitemap page created
+[ ] All internal links working with relative paths
+[ ] SEO meta tags on every page
+[ ] AdSense div containers present on every page
+[ ] Popunder script injection in ads-config.js
+
+================================================================
+BUILD ORDER:
+1. css/style.css + css/responsive.css
+2. ads/ads-config.js
+3. js/main.js
+4. index.html (homepage)
+5. pages/health-insurance.html
+6. pages/car-insurance.html
+7. All 6 article pages
+8. About, Contact, Privacy, Disclaimer, Terms, Sitemap pages
+9. robots.txt + sitemap.xml
+================================================================
