@@ -23,6 +23,7 @@
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
     googletag.defineSlot('/23325132854/100', [[320, 480], [300, 600], [1024, 768]], 'div-gpt-ad-1781347990291-0').addService(googletag.pubads());
+    googletag.defineSlot('/23325132854/101', [300, 250], 'div-gpt-ad-1781348495571-0').addService(googletag.pubads());
     googletag.enableServices();
   });
 })();
@@ -40,7 +41,12 @@ const ADS = {
   footer: `<!-- InsureWise Footer Ad (728x90) — Paste AdSense code here -->`,
 
   // Before article body — 728x90 or Responsive
-  beforeArticle: `<!-- InsureWise Before-Article Ad — Paste AdSense code here -->`,
+  beforeArticle: `<!-- /23325132854/101 -->
+<div id='div-gpt-ad-1781348495571-0' style='min-width: 300px; min-height: 250px; margin: 0 auto; display: flex; justify-content: center;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1781348495571-0'); });
+  </script>
+</div>`,
 
   // In the middle of article — In-article native ad
   betweenArticle: `<!-- InsureWise Between-Article Ad — Paste AdSense code here -->`,
