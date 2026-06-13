@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /ads/
 
-Sitemap: https://yourusername.github.io/insurance-blog/sitemap.xml
+Sitemap: https://xnfun.youom.online/sitemap.xml

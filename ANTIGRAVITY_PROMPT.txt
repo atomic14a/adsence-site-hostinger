@@ -279,7 +279,7 @@ responsive.css must include:
 robots.txt:
   User-agent: *
   Allow: /
-  Sitemap: https://yourusername.github.io/insurance-blog/sitemap.xml
+  Sitemap: https://xnfun.youom.online/sitemap.xml
 
 sitemap.xml: List all HTML pages with <loc> and <priority>
 
