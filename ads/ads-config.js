@@ -99,28 +99,22 @@ function injectAd(zoneKey, containerId) {
   if (!container) return;
 
   const adCode = ADS[zoneKey];
-  if (!adCode || adCode.trim() === '' || adCode.startsWith('<!--')) {
-    // In development mode, show a placeholder
-    container.innerHTML = `
-      <div style="
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 90px;
-        background: #f8fafc;
-        border: 1px dashed #cbd5e1;
-        border-radius: 8px;
-        color: #94a3b8;
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-family: sans-serif;
-        padding: 16px;
-      ">Advertisement — ${zoneKey}</div>`;
+  const parentZone = container.closest('.ad-zone');
+
+  if (!adCode || adCode.trim() === '' || adCode.startsWith('<!--') || adCode.includes('Paste AdSense code here')) {
+    // Hide the container and the wrapping ad-zone to collapse the empty space
+    container.style.display = 'none';
+    if (parentZone) {
+      parentZone.style.display = 'none';
+    }
     return;
   }
 
-  // Insert ad HTML
+  // Show the containers and insert the ad HTML
+  container.style.display = '';
+  if (parentZone) {
+    parentZone.style.display = '';
+  }
   container.innerHTML = adCode;
 
   // Re-execute any <script> tags inside the injected HTML
