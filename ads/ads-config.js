@@ -22,8 +22,14 @@
 
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
+    // Top Header / Interstitial
     googletag.defineSlot('/23325132854/100', [[320, 480], [300, 600], [1024, 768]], 'div-gpt-ad-1781347990291-0').addService(googletag.pubads());
-    googletag.defineSlot('/23325132854/101', [300, 250], 'div-gpt-ad-1781348495571-0').addService(googletag.pubads());
+    
+    // In-article slots (using different target div IDs for the same slot 03 so they can render on the same page)
+    googletag.defineSlot('/23325132854/03', [300, 250], 'div-gpt-ad-1781431885017-0').addService(googletag.pubads());
+    googletag.defineSlot('/23325132854/03', [300, 250], 'div-gpt-ad-1781431885017-1').addService(googletag.pubads());
+    googletag.defineSlot('/23325132854/03', [300, 250], 'div-gpt-ad-1781431885017-2').addService(googletag.pubads());
+    
     googletag.enableServices();
   });
 })();
@@ -40,19 +46,29 @@ const ADS = {
   // Bottom of page — 728x90 Leaderboard
   footer: `<!-- InsureWise Footer Ad (728x90) — Paste AdSense code here -->`,
 
-  // Before article body — 728x90 or Responsive
-  beforeArticle: `<!-- /23325132854/101 -->
-<div id='div-gpt-ad-1781348495571-0' style='min-width: 300px; min-height: 250px; margin: 0 auto; display: flex; justify-content: center;'>
+  // Before article body — Slot 03 Instance 1
+  beforeArticle: `<!-- /23325132854/03 -->
+<div id='div-gpt-ad-1781431885017-0' style='min-width: 300px; min-height: 250px; margin: 0 auto; display: flex; justify-content: center;'>
   <script>
-    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1781348495571-0'); });
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1781431885017-0'); });
   </script>
 </div>`,
 
-  // In the middle of article — In-article native ad
-  betweenArticle: `<!-- InsureWise Between-Article Ad — Paste AdSense code here -->`,
+  // In the middle of article — Slot 03 Instance 2
+  betweenArticle: `<!-- /23325132854/03 -->
+<div id='div-gpt-ad-1781431885017-1' style='min-width: 300px; min-height: 250px; margin: 0 auto; display: flex; justify-content: center;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1781431885017-1'); });
+  </script>
+</div>`,
 
-  // After article — 728x90 or Responsive
-  afterArticle: `<!-- InsureWise After-Article Ad — Paste AdSense code here -->`,
+  // After article — Slot 03 Instance 3
+  afterArticle: `<!-- /23325132854/03 -->
+<div id='div-gpt-ad-1781431885017-2' style='min-width: 300px; min-height: 250px; margin: 0 auto; display: flex; justify-content: center;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1781431885017-2'); });
+  </script>
+</div>`,
 
   // Sidebar — 300x250 Rectangle / Responsive
   sidebar: `<!-- InsureWise Sidebar Ad (300x250) — Paste AdSense code here -->`,
