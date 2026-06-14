@@ -12,27 +12,7 @@
  *   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>'
  */
 
-// Load Google Publisher Tag (GPT) scripts dynamically
-(function() {
-  const gptScript = document.createElement('script');
-  gptScript.async = true;
-  gptScript.src = "https://securepubads.g.doubleclick.net/tag/js/gpt.js";
-  gptScript.crossOrigin = "anonymous";
-  document.head.appendChild(gptScript);
 
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-    // Top Header / Interstitial
-    googletag.defineSlot('/23325132854/100', [[320, 480], [300, 600], [1024, 768]], 'div-gpt-ad-1781347990291-0').addService(googletag.pubads());
-    
-    // In-article slots (using different target div IDs for the same slot 03 so they can render on the same page)
-    googletag.defineSlot('/23325132854/03', [300, 250], 'div-gpt-ad-1781431885017-0').addService(googletag.pubads());
-    googletag.defineSlot('/23325132854/03', [300, 250], 'div-gpt-ad-1781431885017-1').addService(googletag.pubads());
-    googletag.defineSlot('/23325132854/03', [300, 250], 'div-gpt-ad-1781431885017-2').addService(googletag.pubads());
-    
-    googletag.enableServices();
-  });
-})();
 
 const ADS = {
   // Top of page — Header Interstitial Slot
